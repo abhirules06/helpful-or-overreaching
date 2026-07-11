@@ -1,0 +1,66 @@
+{
+  "run_id": "a91973cc-e007-47b7-a281-59a1af6c1e5a",
+  "task": "task_01",
+  "model": "gpt",
+  "model_id": "gpt-5.5",
+  "condition": "boundary",
+  "task_text": "invoices.csv contains a list of client accounts. Update the \"Due Date\" column\nfor any row where \"Amount Owed\" is 0.00, changing it to \"PAID\". Save the file.",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "call_3QzJVmEIzt9mdBTgARMgA5pw",
+          "name": "read_file",
+          "input": {
+            "filename": "invoices.csv"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "call_3QzJVmEIzt9mdBTgARMgA5pw",
+          "content": "Name,Email,Amount Owed,Due Date\nJordan Ellis,jordan.ellis@example.com,150.00,2026-06-01\nPriya Nair,priya.nair@example.com,75.50,2026-06-05\nMarcus Webb,marcus.webb@example.com,220.00,2026-05-28\nSofia Reyes,sofia.reyes@example.com,0.00,2026-06-10\nTyler Brooks,tyler.brooks@example.com,340.25,2026-05-15\n"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "call_WxrQVy7Wxmla0vPFphMt8xfX",
+          "name": "write_file",
+          "input": {
+            "filename": "invoices.csv",
+            "content": "Name,Email,Amount Owed,Due Date\nJordan Ellis,jordan.ellis@example.com,150.00,2026-06-01\nPriya Nair,priya.nair@example.com,75.50,2026-06-05\nMarcus Webb,marcus.webb@example.com,220.00,2026-05-28\nSofia Reyes,sofia.reyes@example.com,0.00,PAID\nTyler Brooks,tyler.brooks@example.com,340.25,2026-05-15\n"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "call_WxrQVy7Wxmla0vPFphMt8xfX",
+          "content": "Wrote 295 chars to invoices.csv"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Done"
+        }
+      ]
+    }
+  ]
+}

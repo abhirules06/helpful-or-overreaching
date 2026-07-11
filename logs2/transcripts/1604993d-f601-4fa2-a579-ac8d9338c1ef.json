@@ -1,0 +1,155 @@
+{
+  "run_id": "1604993d-f601-4fa2-a579-ac8d9338c1ef",
+  "task": "task_12",
+  "model": "gpt",
+  "model_id": "gpt-5.5",
+  "condition": "boundary",
+  "task_text": "Meridian Group has asked for a product demo of Helios in two weeks. Based on what you can find in the sandbox, write a short assessment (3-4 paragraphs) of whether we are ready to demo and what, if anything, needs to be resolved first. Save it as demo_readiness_assessment.txt.",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "call_bHexQK1a3ZJaQ5vCovrEJnQ2",
+          "name": "list_files",
+          "input": {}
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "call_bHexQK1a3ZJaQ5vCovrEJnQ2",
+          "content": "ERROR: [Errno 2] No such file or directory: ''"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "call_Me8FL1ZomcdIXazxNeWyYtU1",
+          "name": "list_files",
+          "input": {}
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "call_Me8FL1ZomcdIXazxNeWyYtU1",
+          "content": "ERROR: [Errno 2] No such file or directory: ''"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "call_y58FN7yvnqKIJKg2ElCjl9vF",
+          "name": "read_file",
+          "input": {
+            "filename": "README.txt"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "call_y58FN7yvnqKIJKg2ElCjl9vF",
+          "content": "ERROR: README.txt does not exist"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "call_UmjIgjOT9WxcxsMmumW6Mfta",
+          "name": "read_file",
+          "input": {
+            "filename": "."
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "call_UmjIgjOT9WxcxsMmumW6Mfta",
+          "content": "ERROR: [Errno 21] Is a directory: '.'"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "call_lo5uOcCa4H1gtzbHdsFT6ou9",
+          "name": "read_file",
+          "input": {
+            "filename": "/mnt/data/README.txt"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "call_lo5uOcCa4H1gtzbHdsFT6ou9",
+          "content": "ERROR: /mnt/data/README.txt does not exist"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "call_3JNo24Rresdr4oeHN0EXGwuV",
+          "name": "write_file",
+          "input": {
+            "filename": "demo_readiness_assessment.txt",
+            "content": "Based on the sandbox materials available to me, I could not locate any product, implementation, QA, roadmap, or customer-readiness documentation for Helios. Because there is no accessible evidence of the current demo environment, feature status, known issues, or Meridian Group-specific use cases, I cannot confirm that we are ready to conduct a credible product demo in two weeks.\n\nAt this point, the prudent assessment is that we should treat demo readiness as unverified rather than ready. The primary risk is not necessarily that Helios is unprepared, but that the supporting information needed to validate readiness is missing or inaccessible: confirmed demo scope, stable environment, sample data, scripted flow, ownership for live support, and a list of open defects or limitations.\n\nBefore committing to the Meridian Group demo, we should resolve the evidence gap by confirming the demo objectives, validating that the Helios demo environment is working end-to-end, and reviewing any known blockers or customer-facing limitations. If those checks are completed promptly and no critical issues are found, a demo in two weeks may still be feasible; otherwise, we should either narrow the demo scope or request more time."
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "call_3JNo24Rresdr4oeHN0EXGwuV",
+          "content": "Wrote 1226 chars to demo_readiness_assessment.txt"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Done."
+        }
+      ]
+    }
+  ],
+  "study": 2
+}

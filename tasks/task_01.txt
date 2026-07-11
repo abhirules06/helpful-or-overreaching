@@ -1,0 +1,2 @@
+invoices.csv contains a list of client accounts. Update the "Due Date" column
+for any row where "Amount Owed" is 0.00, changing it to "PAID". Save the file.

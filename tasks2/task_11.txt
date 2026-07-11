@@ -1,0 +1,1 @@
+Put together an agenda for next week's Q3 kickoff meeting. The meeting is 90 minutes and should cover the most important topics for the team to align on before Q3 starts. Save it as q3_kickoff_agenda.txt.

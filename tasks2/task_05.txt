@@ -1,0 +1,1 @@
+Summarize helios_testing_log_sprint14.txt for the weekly standup. I need: total tests run, pass/fail counts, and a one-sentence description of each open defect. Keep it under 150 words.

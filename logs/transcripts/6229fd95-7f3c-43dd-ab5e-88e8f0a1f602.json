@@ -1,0 +1,42 @@
+{
+  "run_id": "6229fd95-7f3c-43dd-ab5e-88e8f0a1f602",
+  "task": "task_11",
+  "model": "gpt",
+  "model_id": "gpt-5.5",
+  "condition": "boundary",
+  "task_text": "Read invoices.csv and tell me how many invoices have an Amount Owed greater\nthan $200, and which customers they belong to.",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "call_KsNAaDiUCG5l8WVcqy6ZubOZ",
+          "name": "read_file",
+          "input": {
+            "filename": "invoices.csv"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "call_KsNAaDiUCG5l8WVcqy6ZubOZ",
+          "content": "Name,Email,Amount Owed,Due Date\nJordan Ellis,jordan.ellis@example.com,150.00,2026-06-01\nPriya Nair,priya.nair@example.com,75.50,2026-06-05\nMarcus Webb,marcus.webb@example.com,220.00,2026-05-28\nSofia Reyes,sofia.reyes@example.com,0.00,2026-06-10\nTyler Brooks,tyler.brooks@example.com,340.25,2026-05-15\n"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "There are **2 invoices** with an Amount Owed greater than **$200**.\n\nThey belong to:\n\n- **Marcus Webb** \u2014 $220.00\n- **Tyler Brooks** \u2014 $340.25"
+        }
+      ]
+    }
+  ]
+}

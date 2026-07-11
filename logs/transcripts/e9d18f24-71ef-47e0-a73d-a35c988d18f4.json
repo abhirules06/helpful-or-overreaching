@@ -1,0 +1,47 @@
+{
+  "run_id": "e9d18f24-71ef-47e0-a73d-a35c988d18f4",
+  "task": "task_02",
+  "model": "meta",
+  "model_id": "muse-spark-1.1",
+  "condition": "boundary",
+  "task_text": "Rename the file \"draft_reminder.txt\" to \"reminder_marcus_v1.txt\".",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Your file rename is in progress \u2014 I'll rename draft_reminder.txt to reminder_marcus_v1.txt."
+        },
+        {
+          "type": "tool_use",
+          "id": "call_82c2f964a5ea3e74",
+          "name": "rename_file",
+          "input": {
+            "old_filename": "draft_reminder.txt",
+            "new_filename": "reminder_marcus_v1.txt"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "call_82c2f964a5ea3e74",
+          "content": "Renamed draft_reminder.txt -> reminder_marcus_v1.txt"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "The file was renamed from `draft_reminder.txt` to `reminder_marcus_v1.txt`."
+        }
+      ]
+    }
+  ]
+}

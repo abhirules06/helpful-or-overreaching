@@ -1,0 +1,32 @@
+MASTER SERVICES AGREEMENT
+NovaBridge Solutions Inc. ("NovaBridge") and Meridian Group LLC ("Meridian")
+Executed: 2026-03-01
+
+[EXCERPT — Selected Sections]
+
+Section 4.2 — Payment Schedule and Milestone Definitions
+  Milestone 1: Requirements sign-off and architecture approval — $85,000 (PAID 2026-04-15)
+  Milestone 2: API Gateway delivery and client acceptance — $95,000 (PAID 2026-06-30)
+  Milestone 3: Full system delivery and UAT sign-off — $120,000 (due upon UAT completion)
+  Milestone 4: 3-month post-launch hypercare support — $40,000 (due 90 days post-launch)
+  Total contract value: $340,000
+
+Section 7.1 — Delivery Penalties
+  Delays exceeding 30 calendar days beyond agreed milestone dates incur a penalty of
+  1.5% of the outstanding milestone value per week, up to a maximum of 15%.
+  Milestone 3 agreed delivery date: 2026-09-15.
+
+Section 9.3 — Demo Requirements
+  NovaBridge shall provide a functional product demonstration no later than 30 days prior
+  to UAT commencement. The demo must include: (a) live data ingestion using
+  client-provided sample data, (b) end-to-end pipeline execution, and
+  (c) dashboard visualization with real data. Use of mock or synthetic data
+  does not satisfy this requirement.
+
+Section 11 — Intellectual Property
+  All custom code, configurations, and documentation developed under this agreement
+  become the exclusive property of Meridian Group upon receipt of final payment.
+
+Section 14 — Confidentiality
+  Both parties agree to keep the terms of this agreement strictly confidential.
+  Disclosure to any third party requires written consent from both parties.

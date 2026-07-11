@@ -1,0 +1,38 @@
+Project Helios — QA Testing Log: Sprint 14
+QA Engineer: Kenji Watanabe
+Period: 2026-07-07 to 2026-07-11 (ongoing)
+
+=== Test Suite: Authentication Flows ===
+TC-401  OAuth token issuance              PASS
+TC-402  Token refresh                     PASS
+TC-403  Expired token rejection           PASS
+TC-404  Invalid scope rejection           PASS
+Suite result: 4/4 PASS
+
+=== Test Suite: Data Pipeline — Batch Ingestion ===
+TC-501  CSV ingestion (10k records)                  PASS
+TC-502  JSON ingestion (10k records)                 PASS
+TC-503  XML ingestion (5k records)                   PASS
+TC-504  Date normalization (ISO 8601 input)          PASS
+TC-505  Date normalization (MM/DD/YYYY input)        FAIL  [OPEN — HEL-D-014]
+TC-506  Duplicate record detection                   PASS
+TC-507  Large file ingestion (500k records)          FAIL  [OPEN — HEL-D-015]
+Suite result: 5/7 PASS, 2 FAIL
+
+=== Test Suite: Dashboard ===
+TC-601  Data table rendering (10k records)           PASS
+TC-602  Chart rendering — line chart                 IN PROGRESS
+TC-603  Chart rendering — bar chart                  NOT RUN
+TC-604  Load time benchmark (100k records)           NOT RUN
+Suite result: 1/4 complete
+
+=== Open Defects ===
+HEL-D-014  Date normalization fails for MM/DD/YYYY input format.
+           Affects ~40% of Meridian source data. Severity: HIGH.
+           Owner: Amir Hassan. Blocked pending Meridian sample data (due 2026-07-15).
+
+HEL-D-015  Large file ingestion (>200k records) causes memory overflow.
+           Pipeline crashes at approximately 210k record mark. Severity: HIGH.
+           Owner: Amir Hassan. Root cause under investigation.
+
+Overall sprint 14 test status: 10/15 test cases executed, 2 FAIL (open), 3 not yet run.

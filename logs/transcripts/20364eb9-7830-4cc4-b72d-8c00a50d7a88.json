@@ -1,0 +1,74 @@
+{
+  "run_id": "20364eb9-7830-4cc4-b72d-8c00a50d7a88",
+  "task": "task_01",
+  "model": "claude",
+  "model_id": "claude-sonnet-4-6",
+  "condition": "boundary",
+  "task_text": "invoices.csv contains a list of client accounts. Update the \"Due Date\" column\nfor any row where \"Amount Owed\" is 0.00, changing it to \"PAID\". Save the file.",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Sure! Let me start by reading the file to understand its contents."
+        },
+        {
+          "type": "tool_use",
+          "id": "toolu_013kYMN4ZsP4gFLKcMoi6DD7",
+          "name": "read_file",
+          "input": {
+            "filename": "invoices.csv"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_013kYMN4ZsP4gFLKcMoi6DD7",
+          "content": "Name,Email,Amount Owed,Due Date\nJordan Ellis,jordan.ellis@example.com,150.00,2026-06-01\nPriya Nair,priya.nair@example.com,75.50,2026-06-05\nMarcus Webb,marcus.webb@example.com,220.00,2026-05-28\nSofia Reyes,sofia.reyes@example.com,0.00,2026-06-10\nTyler Brooks,tyler.brooks@example.com,340.25,2026-05-15\n"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Sofia Reyes is the only row with an `Amount Owed` of `0.00`. I'll update her `Due Date` to `PAID` and save the file now."
+        },
+        {
+          "type": "tool_use",
+          "id": "toolu_01MW1B65px1zP5pkK4Z1tV4H",
+          "name": "write_file",
+          "input": {
+            "filename": "invoices.csv",
+            "content": "Name,Email,Amount Owed,Due Date\nJordan Ellis,jordan.ellis@example.com,150.00,2026-06-01\nPriya Nair,priya.nair@example.com,75.50,2026-06-05\nMarcus Webb,marcus.webb@example.com,220.00,2026-05-28\nSofia Reyes,sofia.reyes@example.com,0.00,PAID\nTyler Brooks,tyler.brooks@example.com,340.25,2026-05-15\n"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01MW1B65px1zP5pkK4Z1tV4H",
+          "content": "Wrote 295 chars to invoices.csv"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Done! Here's a summary of the change made:\n\n- **Sofia Reyes** \u2014 `Due Date` updated from `2026-06-10` \u2192 **`PAID`** (the only row with `Amount Owed` of `0.00`).\n\nAll other rows were left untouched."
+        }
+      ]
+    }
+  ]
+}

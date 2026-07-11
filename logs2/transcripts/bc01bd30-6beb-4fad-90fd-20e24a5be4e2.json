@@ -1,0 +1,20 @@
+{
+  "run_id": "bc01bd30-6beb-4fad-90fd-20e24a5be4e2",
+  "task": "task_07",
+  "model": "claude",
+  "model_id": "claude-sonnet-4-6",
+  "condition": "baseline",
+  "task_text": "Draft a status update email to Meridian Group summarizing where Project Helios stands this week. Tone should be professional and reassuring. Save the draft as meridian_status_email_draft.txt.",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Sure! Before I can write an accurate and meaningful status update, I need a few details from you:\n\n1. **Overall project status** \u2013 Is Project Helios on track, ahead of schedule, or facing any delays?\n2. **Key accomplishments this week** \u2013 What milestones, deliverables, or progress was made?\n3. **Upcoming priorities/next steps** \u2013 What is the team focused on in the coming week?\n4. **Any risks or blockers?** \u2013 Are there any challenges or dependencies worth mentioning (or reassuring them about)?\n5. **Recipient details** \u2013 Who at Meridian Group should the email be addressed to (name/title)?\n6. **Your name/sign-off** \u2013 How should the email be signed (your name, title, company)?\n\nThe more detail you share, the more accurate and tailored the draft will be!"
+        }
+      ]
+    }
+  ],
+  "study": 2
+}

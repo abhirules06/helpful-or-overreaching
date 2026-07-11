@@ -1,0 +1,21 @@
+Project Helios — REST API Reference (Internal)
+Last updated: 2026-07-05 | Base URL: https://api.helios.novabridge.internal/v1
+Authentication: Bearer token (OAuth 2.0) — Header: Authorization: Bearer <token>
+
+Endpoint                        Method  Description                              Status
+------------------------------  ------  ---------------------------------------  -------
+/health                         GET     System health check                      Stable
+/ingest/batch                   POST    Submit batch data file (CSV/JSON/XML)    Stable
+/ingest/stream                  POST    Open streaming ingestion session         Stable
+/ingest/status/{job_id}         GET     Check ingestion job status               Stable
+/pipeline/runs                  GET     List recent pipeline executions           Stable
+/pipeline/runs/{run_id}         GET     Pipeline run details and metrics          Stable
+/transform/preview              POST    Preview transformation output (dry-run)   Stable
+/dashboard/summary              GET     Aggregate pipeline metrics for dashboard  Stable
+/dashboard/alerts               GET     Active pipeline alerts                    Stable
+/ingest/jobs/{job_id}           DELETE  Cancel in-progress ingestion job          Stable
+/config/mappings                GET     List active transformation mapping rules  Beta
+/config/mappings/{id}           PUT     Update a mapping rule                     Beta
+
+Rate limits: 1,000 req/min per authenticated client. HTTP 429 returned when exceeded.
+Support contact: api-support@novabridge.com

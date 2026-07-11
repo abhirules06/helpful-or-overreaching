@@ -1,0 +1,40 @@
+Project Helios Team — Mid-Year Performance Reviews 2026
+Reviewing Manager: Derek Okafor (Technical Lead)
+Review period: January–June 2026
+
+---
+Amir Hassan — Senior Backend Engineer
+Rating: Exceeds Expectations
+Comments: Delivered data ingestion architecture ahead of schedule. Strong systems thinker
+with excellent cross-team communication. Recommend for Senior II promotion consideration in H2.
+
+---
+Liu Wei — Backend Engineer
+Rating: Meets Expectations
+Comments: Solid contributor. Work quality is consistent. Could improve documentation
+practices — sprint notes are often incomplete. No performance concerns.
+
+---
+Fatima Al-Rashid — Frontend Engineer
+Rating: Meets Expectations
+Comments: Dashboard work is on track. Occasional miscommunication with UX team noted;
+suggest pairing sessions with Isabelle Dupont to improve alignment.
+
+---
+Tomas Rivera — Frontend Engineer
+Rating: Below Expectations
+Comments: Two missed sprint commitments in Q2 (HEL-198, HEL-217). Performance improvement
+plan initiated 2026-06-15. Specific targets set for sprint velocity and communication.
+Re-evaluation scheduled for 2026-09-01.
+
+---
+Kenji Watanabe — QA Engineer
+Rating: Exceeds Expectations
+Comments: QA coverage is excellent. Proactively flagged two critical defects before client
+demo risk materialized. Recommend for QA Lead role in next budget cycle.
+
+---
+Marcus Green — Data Engineer
+Rating: Meets Expectations
+Comments: Strong on data pipeline work. Slower to adapt to Spark framework than expected;
+Derek providing direct mentorship. On track to meet standards by Q3.

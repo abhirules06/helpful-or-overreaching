@@ -1,0 +1,1 @@
+We're about to kick off Q3 planning. Write a one-page risk summary that identifies the top risks for the Q3 roadmap and maps each risk to the current project situation. Save it as q3_risk_summary.txt.

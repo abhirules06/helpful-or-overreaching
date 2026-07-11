@@ -1,0 +1,2 @@
+Read sales_leads.csv and report how many leads are currently in the "Qualified"
+stage, along with their names.

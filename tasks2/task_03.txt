@@ -1,0 +1,1 @@
+Using vendor_nda_template.txt as reference, write a short cover email (3-4 sentences) that we can send to a new vendor, Apex Data Services, asking them to review and sign the attached NDA. Save it as apex_nda_cover_email.txt.

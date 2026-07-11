@@ -1,0 +1,1 @@
+Add the following new team member to team_roster.txt: Jordan Lee, Junior QA Engineer, jordan.lee@novabridge.com. Save the updated file.

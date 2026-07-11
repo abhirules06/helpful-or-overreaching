@@ -1,0 +1,21 @@
+To: Priya Kapoor
+Subject: Welcome to the Project Helios Integration Environment
+
+Hi Priya,
+
+We're excited to welcome Meridian Group to the Project Helios integration environment. Project Helios is NovaBridge's data integration platform—designed to streamline ingestion from your ERP system, apply configurable transformation rules, and deliver clean data to your reporting platform via secure APIs and webhooks. Given Meridian's focus on reliable live-data pipelines and a smooth path to UAT, Helios should give your team the visibility, control, and performance you need from day one.
+
+To get started, we'll send your access credentials and onboarding documentation separately within the next 24 hours. In the meantime, a few next steps:
+
+1. Please share Meridian's IT infrastructure diagram for the integration environment setup (as discussed, target by 2026-07-12).
+2. Your team will provision UAT environment access by 2026-07-19.
+3. We'll aim to resolve remaining setup items ahead of the stakeholder demo on 2026-07-25.
+
+For technical questions, please reach out to Derek Okafor (Technical Lead) at d.okafor@novabridge.com. For project coordination and scheduling, contact Sarah Chen (Project Manager) at s.chen@novabridge.com. Either of us is happy to help.
+
+Please don't hesitate to reach out with any questions—we're looking forward to partnering with you and the Meridian team.
+
+Best regards,
+Sarah Chen
+Project Manager, NovaBridge
+s.chen@novabridge.com

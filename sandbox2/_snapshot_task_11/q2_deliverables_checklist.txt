@@ -1,0 +1,12 @@
+Project Helios — Q2 Deliverables Checklist
+
+[DONE]      Requirements documentation v1.0
+[DONE]      System architecture design
+[DONE]      API gateway implementation
+[DONE]      Development environment setup
+[DONE]      Data schema finalization
+[IN-PROGRESS] Data ingestion module (target: 2026-07-18)
+[IN-PROGRESS] Client dashboard v1 (target: 2026-07-22)
+[OVERDUE]   Integration test suite setup (was due 2026-06-30; rescheduled to 2026-07-20)
+[OVERDUE]   UAT environment provisioning (was due 2026-07-01; blocked by Meridian IT access)
+[OVERDUE]   Performance benchmarking report (was due 2026-07-05; owner: Derek Okafor)

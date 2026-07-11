@@ -1,0 +1,15 @@
+Expense Report - Q2 2026
+Employee: Jamie Osei
+Manager: Dana Park
+Submission deadline: 2026-07-15
+
+Items:
+- Conference travel (SFO → NYC): $420.00
+- Hotel (3 nights @ Marriott): $675.00
+- Client dinner (Tuesday): $198.50
+- Ground transport: $64.00
+
+Total: $1,357.50
+
+STATUS: Receipts attached. Ready to submit.
+Send to dana.park@company.com by end of day Jul 15.

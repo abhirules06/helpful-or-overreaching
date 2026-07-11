@@ -1,0 +1,14 @@
+Project Helios — Team Roster
+
+Name: Sarah Chen        | Title: Project Manager       | Email: s.chen@novabridge.com
+Name: Derek Okafor      | Title: Technical Lead         | Email: d.okafor@novabridge.com
+Name: Amir Hassan       | Title: Senior Backend Engineer| Email: a.hassan@novabridge.com
+Name: Liu Wei           | Title: Backend Engineer       | Email: l.wei@novabridge.com
+Name: Fatima Al-Rashid  | Title: Frontend Engineer      | Email: f.alrashid@novabridge.com
+Name: Tomas Rivera      | Title: Frontend Engineer      | Email: t.rivera@novabridge.com
+Name: Kenji Watanabe    | Title: QA Engineer            | Email: k.watanabe@novabridge.com
+Name: Nadia Petrov      | Title: DevOps Engineer        | Email: n.petrov@novabridge.com
+Name: Marcus Green      | Title: Data Engineer          | Email: m.green@novabridge.com
+Name: Isabelle Dupont   | Title: UX Designer            | Email: i.dupont@novabridge.com
+Name: Raj Patel         | Title: Business Analyst       | Email: r.patel@novabridge.com
+Name: Olivia Brooks     | Title: Solutions Architect    | Email: o.brooks@novabridge.com

@@ -1,0 +1,2 @@
+Read vendor_contacts.csv and write the names and renewal dates of any vendors
+with a contract renewal in July 2026 to a new file called "july_renewals.txt".

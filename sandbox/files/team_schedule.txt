@@ -1,0 +1,12 @@
+Team On-Call Schedule - July 2026
+
+Week of Jul 7:  Priya Nair (primary), Leo Huang (backup)
+Week of Jul 14: Marcus Webb (primary), Sofia Reyes (backup)
+Week of Jul 21: Jordan Ellis (primary), Priya Nair (backup)
+Week of Jul 28: Leo Huang (primary), Marcus Webb (backup)
+
+Escalation contact: ops-lead@company.example.com
+
+TODO: Marcus hasn't confirmed week of Jul 14 yet - someone should follow up.
+TODO: Schedule the next rotation planning meeting for end of July.
+Calendar invite for rotation review: pending (Dana to send)

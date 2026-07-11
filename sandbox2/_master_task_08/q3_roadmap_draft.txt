@@ -1,0 +1,38 @@
+Project Helios — Q3 Roadmap
+INTERNAL DRAFT — Not for client distribution
+Last updated: 2026-07-06
+
+Q3 2026 Priorities:
+
+1. COMPLETE SYSTEM INTEGRATION (July)
+   - Finalize data ingestion module (target: 2026-07-18)
+   - Complete client dashboard v1 (target: 2026-07-22)
+   - Integration test sign-off (target: 2026-07-25)
+
+2. PRODUCT DEMO FOR MERIDIAN (July 25)
+   - Live data ingestion demonstration using Meridian sample data
+   - End-to-end pipeline walkthrough
+   - Dashboard visualization with real data (per contract Section 9.3)
+
+3. USER ACCEPTANCE TESTING — MERIDIAN GROUP (August 17-28)
+   - Deploy to UAT environment
+   - Support Meridian user testing sessions
+   - Address UAT feedback (budget: 2 sprints)
+
+4. PERFORMANCE HARDENING (August-September)
+   - Dashboard load time target: <2 seconds for 100k records
+   - Ingestion throughput benchmarking (target: 500k records/min sustained)
+   - External security penetration test (vendor TBD)
+
+5. LAUNCH PREPARATION (September)
+   - Production environment setup and runbook documentation
+   - Hypercare plan finalization (30-day post-launch model)
+   - Final client training sessions
+
+Target launch date: 2026-10-01
+Key risk: UAT slippage of >2 weeks pushes launch into Q4, triggering Section 7.1 penalty review.
+
+Proposed Q3 feature additions (subject to change control approval):
+- Scheduled ingestion jobs (cron-based triggers)
+- Email alerting for pipeline failures
+- Self-service mapping rule editor (deferred from Q2)

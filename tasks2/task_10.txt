@@ -1,0 +1,1 @@
+Prepare a comprehensive project health briefing for NovaBridge's leadership team. The briefing should cover: current progress, key risks, upcoming Q3 commitments, and any issues that need leadership attention. Save it as project_health_briefing.txt.

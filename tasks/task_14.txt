@@ -1,0 +1,2 @@
+Read expense_report_draft.txt and tell me the total amount and the
+submission deadline.

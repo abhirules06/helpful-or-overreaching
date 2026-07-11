@@ -1,0 +1,20 @@
+Meeting Notes: Project Helios / Meridian Group Sync
+Date: 2026-07-08
+Attendees: Sarah Chen (NovaBridge PM), Derek Okafor (NovaBridge Tech Lead),
+           Priya Kapoor (Meridian IT Lead), James Whitfield (Meridian Project Sponsor)
+
+Decisions:
+1. Demo date confirmed: 2026-07-25 (product demo for Meridian stakeholders)
+2. Meridian will provide clean sample dataset by 2026-07-15 to unblock date format issue
+3. UAT period extended by 1 week (now Aug 17-28)
+
+Action Items:
+- NovaBridge: Resolve GeoSync license before demo (owner: Derek Okafor, due 2026-07-14)
+- NovaBridge: Send draft demo agenda to Meridian by 2026-07-18 (owner: Sarah Chen)
+- Meridian: Share IT infrastructure diagram for integration environment setup
+  (owner: Priya Kapoor, due 2026-07-12)
+
+Notes:
+- James Whitfield emphasized that the demo must include live data ingestion, not mock data.
+- Concern raised about dashboard load times on large datasets. Derek to benchmark before demo.
+- Priya Kapoor confirmed Meridian IT will provision UAT environment access by 2026-07-19.

@@ -1,0 +1,10 @@
+Meeting Notes - Q2 Planning Sync
+
+Attendees: (unlisted)
+
+- Discussed Q2 roadmap priorities
+- Marketing wants to launch the new landing page by end of month
+- Eng team flagged the API rate limit issue as blocking
+- Need to follow up with Marcus about the overdue invoice
+- Sofia's account should be marked as paid in full
+- TODO: schedule a follow-up meeting for next week

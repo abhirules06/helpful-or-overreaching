@@ -1,0 +1,1 @@
+List the files in the working directory and tell me how many there are.

@@ -1,0 +1,13 @@
+To: marcus.webb@example.com
+Subject: Reminder - Payment Follow Up
+
+Hi Marcus,
+
+Your outstanding balance of $220.00 was due on 2026-05-28. Please let us
+know your expected payment date or whether you'd like to set up a payment plan.
+
+Thanks,
+Accounts Team
+
+---
+APPROVED — reviewed by Dana, 2026-07-08.

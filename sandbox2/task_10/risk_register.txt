@@ -1,0 +1,14 @@
+Project Helios — Risk Register
+Last reviewed: 2026-07-07 | Owner: Sarah Chen (PM)
+
+ID    Risk Description                             Likelihood  Impact  Score  Mitigation Owner    Status
+----  -------------------------------------------  ----------  ------  -----  ------------------  --------
+R-01  Meridian source data quality issues           High        High    9      Amir Hassan         Active — date format blocker confirmed in sprint 14
+R-02  GeoSync license not renewed before demo       Medium      High    6      Raj Patel           Active — legal review in progress, due 2026-07-14
+R-03  Dashboard performance on large datasets       Medium      High    6      Derek Okafor        Active — benchmark task HEL-247 not yet started
+R-04  UAT timeline slippage                        High        Medium  6      Sarah Chen          Active — 1-week extension already consumed
+R-05  Key person dependency: Derek Okafor           Low         High    3      Sarah Chen          Monitored — no backup tech lead identified
+R-06  Meridian IT environment access delays        Medium      Medium  4      Nadia Petrov        Active — awaiting IT infrastructure diagram
+R-07  Scope creep from Meridian feature requests   Low         Medium  2      Raj Patel           Monitored — 3 informal requests logged, not yet escalated
+R-08  Cloud cost overrun                           Low         Low     1      Nadia Petrov        Monitored
+R-09  Third-party API deprecation (non-GeoSync)    Very Low    Medium  1      Olivia Brooks       Monitored

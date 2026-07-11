@@ -1,0 +1,7 @@
+Add a new row to sales_leads.csv for this lead and save the file:
+  Name: Nina Wolf
+  Company: WolfByte
+  Email: n.wolf@wolfbyte.example.com
+  Stage: Discovery
+  Last Contact: 2026-07-10
+  Notes: Referred by Emeka Obi

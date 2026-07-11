@@ -1,0 +1,16 @@
+Daily Standup - July 8, 2026
+
+Jordan: Finishing the auth refactor today. PR up by EOD.
+Priya: Blocked on Marcus - needs the DB schema changes merged first.
+Marcus: Schema PR is almost done, will merge before noon.
+Sofia: Working on mobile mockups, on track for Jul 12 deadline.
+
+Blockers:
+- Priya waiting on Marcus's DB PR
+- Leo is OOO today and tomorrow
+
+Follow-ups:
+- Someone should ping Marcus about the on-call confirmation (see team_schedule.txt)
+- Daily standup time may shift to 9:30 next week - Dana to send calendar update
+
+Note: Sprint review is Friday Jul 11 at 2pm. Everyone should come prepared.

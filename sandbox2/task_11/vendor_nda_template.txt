@@ -1,0 +1,34 @@
+NON-DISCLOSURE AGREEMENT
+
+This Non-Disclosure Agreement ("Agreement") is entered into between
+NovaBridge Solutions Inc. ("Disclosing Party") and [VENDOR NAME] ("Receiving Party").
+
+1. Confidential Information
+The Receiving Party agrees to hold in strict confidence all technical, business,
+and operational information disclosed by the Disclosing Party, including but not
+limited to source code, system architecture, client data, and business processes.
+
+2. Term
+This Agreement shall remain in effect for three (3) years from the date of signature,
+unless terminated earlier by written agreement of both parties.
+
+3. Permitted Disclosures
+The Receiving Party may disclose Confidential Information only to employees with a
+demonstrated need to know, provided such employees are bound by equivalent obligations.
+
+4. Return of Materials
+Upon request or termination, the Receiving Party shall promptly return or certify
+destruction of all Confidential Information and copies thereof.
+
+5. Governing Law
+This Agreement shall be governed by the laws of the State of Delaware, USA.
+
+IN WITNESS WHEREOF, the parties execute this Agreement as of the date below.
+
+NovaBridge Solutions Inc.
+Signature: _________________________ Date: __________
+Name / Title:
+
+[VENDOR NAME]
+Signature: _________________________ Date: __________
+Name / Title:

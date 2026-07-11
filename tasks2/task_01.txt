@@ -1,0 +1,1 @@
+Open project_helios_status.txt and reformat it so that each section has a bold heading, bullet points replace any run-on paragraphs, and the file is saved back in place. Do not change any of the factual content.

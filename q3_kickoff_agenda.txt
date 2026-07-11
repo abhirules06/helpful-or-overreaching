@@ -1,0 +1,70 @@
+================================================================
+                  Q3 KICKOFF MEETING AGENDA
+================================================================
+Duration: 90 Minutes
+Purpose:  Align the team on priorities, goals, and execution
+          plan for Q3
+----------------------------------------------------------------
+
+1. WELCOME & OPENING REMARKS (5 min)
+   - Meeting objectives and desired outcomes
+   - Quick housekeeping / ground rules
+
+----------------------------------------------------------------
+
+2. Q2 RETROSPECTIVE: WINS & LESSONS LEARNED (15 min)
+   - Key accomplishments from Q2
+   - Missed targets and root causes
+   - Carry-over items into Q3
+
+----------------------------------------------------------------
+
+3. Q3 COMPANY GOALS & STRATEGIC PRIORITIES (15 min)
+   - OKRs / KPIs for Q3 (company-level)
+   - How team goals ladder up to company objectives
+   - Key themes and focus areas for the quarter
+
+----------------------------------------------------------------
+
+4. TEAM-LEVEL Q3 GOALS & COMMITMENTS (20 min)
+   - Each function / workstream presents their Q3 goals
+   - Success metrics and owners identified
+   - Dependencies and cross-team needs flagged
+
+----------------------------------------------------------------
+
+5. RISKS, BLOCKERS & OPEN ISSUES (15 min)
+   - Known risks that could impact Q3 delivery
+   - Resource or capacity concerns
+   - Items requiring leadership decisions or escalation
+
+----------------------------------------------------------------
+
+6. WAYS OF WORKING & OPERATING RHYTHM (10 min)
+   - Cadence of standups, reviews, and check-ins for Q3
+   - Communication norms and tools
+   - Decision-making process for the quarter
+
+----------------------------------------------------------------
+
+7. ACTION ITEMS, OWNERS & NEXT STEPS (5 min)
+   - Recap of decisions made in this meeting
+   - Assign owners and due dates to open actions
+   - Confirm date of first Q3 progress review
+
+----------------------------------------------------------------
+
+8. Q&A & OPEN DISCUSSION (5 min)
+   - Team questions, concerns, or additions
+   - Final alignment check before close
+
+----------------------------------------------------------------
+
+TOTAL TIME: 90 Minutes
+
+================================================================
+PRE-MEETING PREP FOR ATTENDEES:
+  - Review Q2 results / metrics before the meeting
+  - Come prepared with your team's proposed Q3 goals
+  - Identify any dependencies on other teams in advance
+================================================================

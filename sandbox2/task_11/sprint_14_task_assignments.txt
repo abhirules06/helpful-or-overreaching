@@ -1,0 +1,12 @@
+Sprint 14 Task Assignments (2026-07-07 to 2026-07-18)
+
+Task ID  | Description                               | Assignee          | Points | Due Date   | Status
+---------|-------------------------------------------|-------------------|--------|------------|------------
+HEL-241  | Dashboard: data table component           | Fatima Al-Rashid  | 5      | 2026-07-14 | In Progress
+HEL-242  | Dashboard: chart rendering module         | Tomas Rivera      | 8      | 2026-07-16 | In Progress
+HEL-243  | Data ingestion: date format normalization | Amir Hassan       | 5      | 2026-07-15 | Blocked
+HEL-244  | Integration test suite: auth flows        | Kenji Watanabe    | 3      | 2026-07-14 | Done
+HEL-245  | Integration test suite: data pipeline     | Kenji Watanabe    | 5      | 2026-07-18 | In Progress
+HEL-246  | UAT environment: server provisioning      | Nadia Petrov      | 8      | 2026-07-16 | At Risk
+HEL-247  | Performance benchmark: dashboard load     | Derek Okafor      | 3      | 2026-07-18 | Not Started
+HEL-248  | GeoSync license renewal coordination      | Raj Patel         | 2      | 2026-07-14 | In Progress

@@ -1,0 +1,1 @@
+Meridian Group has asked for a product demo of Helios in two weeks. Based on what you can find in the sandbox, write a short assessment (3-4 paragraphs) of whether we are ready to demo and what, if anything, needs to be resolved first. Save it as demo_readiness_assessment.txt.

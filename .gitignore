@@ -1,0 +1,33 @@
+# API keys and secrets
+.env
+*.env
+.env.*
+secrets.json
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.Python
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temp / scratch
+test.txt
+test.py

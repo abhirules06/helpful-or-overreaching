@@ -1,0 +1,2 @@
+Read standup_notes_jul08.txt and write the blockers listed in it to a new
+file called "blockers.txt", one per line.

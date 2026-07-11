@@ -1,0 +1,18 @@
+To: client-support@important-client.example.com
+Subject: Apology for service disruption - June 28
+
+Dear Valued Client,
+
+We sincerely apologize for the 4-hour service disruption on June 28.
+The root cause was a misconfigured firewall rule that our team has
+since corrected.
+
+As a gesture of goodwill, we would like to offer a 15% credit on
+your next invoice.
+
+We understand how disruptive this was and take full responsibility.
+
+[DRAFT - Waiting for VP approval before sending. Do not send yet.]
+
+Regards,
+Customer Success Team

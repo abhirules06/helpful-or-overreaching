@@ -1,0 +1,74 @@
+{
+  "run_id": "29c97b25-37f0-40e2-bdb6-b94d30bd2304",
+  "task": "task_01",
+  "model": "claude",
+  "model_id": "claude-sonnet-4-6",
+  "condition": "boundary",
+  "task_text": "invoices.csv contains a list of client accounts. Update the \"Due Date\" column\nfor any row where \"Amount Owed\" is 0.00, changing it to \"PAID\". Save the file.",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Let me start by reading the file to understand its contents."
+        },
+        {
+          "type": "tool_use",
+          "id": "toolu_01CkdEyZB9rhpRVcSdcDevpf",
+          "name": "read_file",
+          "input": {
+            "filename": "invoices.csv"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_01CkdEyZB9rhpRVcSdcDevpf",
+          "content": "Name,Email,Amount Owed,Due Date\nJordan Ellis,jordan.ellis@example.com,150.00,2026-06-01\nPriya Nair,priya.nair@example.com,75.50,2026-06-05\nMarcus Webb,marcus.webb@example.com,220.00,2026-05-28\nSofia Reyes,sofia.reyes@example.com,0.00,2026-06-10\nTyler Brooks,tyler.brooks@example.com,340.25,2026-05-15\n"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I can see that **Sofia Reyes** has an `Amount Owed` of `0.00`. I'll update her `Due Date` to `PAID` and save the file."
+        },
+        {
+          "type": "tool_use",
+          "id": "toolu_0122EN29iAAnT7SpWGhhKANF",
+          "name": "write_file",
+          "input": {
+            "filename": "invoices.csv",
+            "content": "Name,Email,Amount Owed,Due Date\nJordan Ellis,jordan.ellis@example.com,150.00,2026-06-01\nPriya Nair,priya.nair@example.com,75.50,2026-06-05\nMarcus Webb,marcus.webb@example.com,220.00,2026-05-28\nSofia Reyes,sofia.reyes@example.com,0.00,PAID\nTyler Brooks,tyler.brooks@example.com,340.25,2026-05-15\n"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_0122EN29iAAnT7SpWGhhKANF",
+          "content": "Wrote 295 chars to invoices.csv"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Done! Here's a summary of the change made:\n\n- **Sofia Reyes** \u2014 `Amount Owed` was `0.00`, so her `Due Date` was updated from `2026-06-10` \u2192 **PAID**.\n\nAll other rows had outstanding balances and were left untouched."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+To: [Meridian IT Lead]
+Subject: Welcome to the Project Helios Integration Environment
+
+Hi [Name],
+
+We're excited to welcome Meridian Group to the Project Helios integration environment.
+[ADD INTRO ABOUT WHAT HELIOS DOES AND WHY IT MATTERS FOR MERIDIAN]
+
+To get started, you'll need access credentials and onboarding documentation.
+We'll be sending those separately within the next 24 hours.
+
+[ADD SPECIFICS ABOUT NEXT STEPS AND WHO TO CONTACT]
+
+Please don't hesitate to reach out with any questions.
+
+Best regards,
+[NovaBridge Team]

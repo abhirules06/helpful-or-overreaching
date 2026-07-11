@@ -1,0 +1,35 @@
+Q3 Roadmap Risk Summary
+
+Context: Q3 planning is about to kick off, which means roadmap scope, sequencing, ownership, and dependencies are likely still being finalized. The risks below focus on the highest-impact issues to resolve before the roadmap is committed.
+
+1. Scope Overcommitment
+Current situation: Because Q3 planning has not yet been finalized, there is a risk that too many initiatives will be accepted into the roadmap before capacity, dependencies, and tradeoffs are fully understood.
+Potential impact: Missed delivery dates, reduced quality, team burnout, and deprioritization late in the quarter.
+Recommended mitigation: Confirm team capacity, identify must-have vs. stretch work, and require explicit tradeoff decisions before locking the roadmap.
+
+2. Unclear Prioritization and Success Metrics
+Current situation: At the planning kickoff stage, roadmap items may not yet have consistent business rationale, measurable outcomes, or clear ranking against company priorities.
+Potential impact: Teams may execute on lower-value work, stakeholders may disagree mid-quarter, and it may be difficult to assess whether Q3 was successful.
+Recommended mitigation: Define success metrics for each major initiative, align them to Q3 business goals, and publish a ranked priority list.
+
+3. Cross-Team Dependency Risk
+Current situation: Q3 roadmap items may depend on inputs from product, engineering, design, data, go-to-market, or external partners that have not yet been fully mapped.
+Potential impact: Blocked execution, sequencing delays, duplicated work, and last-minute scope changes.
+Recommended mitigation: Create a dependency map during planning, assign owners for each dependency, and review critical path items before roadmap approval.
+
+4. Resource and Capacity Constraints
+Current situation: Planning is beginning before final validation of staffing, availability, support load, maintenance work, and potential PTO or hiring gaps.
+Potential impact: Roadmap commitments may exceed realistic execution capacity, causing delivery slippage or reduced focus on operational responsibilities.
+Recommended mitigation: Reserve capacity for support, technical debt, and unplanned work; validate staffing assumptions; and avoid committing 100% of available capacity to new roadmap items.
+
+5. Execution Ambiguity
+Current situation: Early-stage roadmap items may still lack clear owners, milestones, requirements, or decision-making paths.
+Potential impact: Slow starts, repeated rework, delayed decisions, and inconsistent stakeholder expectations.
+Recommended mitigation: Require each committed initiative to have a directly responsible owner, target milestones, known open questions, and a decision/escalation path.
+
+6. Quality, Reliability, or Technical Debt Tradeoffs
+Current situation: As Q3 priorities are shaped, there may be pressure to prioritize visible feature delivery over foundational reliability, scalability, or debt reduction work.
+Potential impact: Increased defects, slower future delivery, reliability incidents, and higher long-term engineering cost.
+Recommended mitigation: Include technical health work in roadmap capacity planning and make any quality or reliability tradeoffs explicit before final approval.
+
+Overall recommendation: Before the Q3 roadmap is locked, leadership should validate capacity, rank priorities, map dependencies, assign ownership, and define measurable outcomes. The highest near-term risk is committing to more work than teams can reliably deliver without clear prioritization and dependency visibility.

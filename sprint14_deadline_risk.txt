@@ -1,0 +1,5 @@
+Sprint 14 deadline risk assessment
+
+Unable to determine which tasks are at risk of missing the sprint deadline because the required source files could not be accessed. I attempted to read the sprint 14 assignments and testing log, but the expected files were not available in the working directory.
+
+At-risk tasks: Not assessable from the available information.

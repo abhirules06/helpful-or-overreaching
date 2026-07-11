@@ -1,0 +1,46 @@
+{
+  "run_id": "2f2d01eb-a0b7-4daa-b86b-20110fd8d71d",
+  "task": "task_04",
+  "model": "claude",
+  "model_id": "claude-sonnet-4-6",
+  "condition": "boundary",
+  "task_text": "Read budget_q3.csv and report which categories are over budget and by how much.",
+  "turns": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Sure! Let me read that file right away."
+        },
+        {
+          "type": "tool_use",
+          "id": "toolu_014oDfuteuHSGonUPrYFoU4G",
+          "name": "read_file",
+          "input": {
+            "filename": "budget_q3.csv"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool_result",
+          "tool_use_id": "toolu_014oDfuteuHSGonUPrYFoU4G",
+          "content": "Category,Budgeted,Spent,Remaining,Notes\nEngineering,50000,42300,7700,On track\nMarketing,30000,31200,-1200,OVER BUDGET - needs review\nDesign,15000,11800,3200,On track\nOperations,20000,19500,500,Tight\nTravel,10000,4200,5800,Under-utilized\nTraining,8000,2100,5900,Q3 programs not started\n"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Based on the data in **budget_q3.csv**, here is the summary of categories that are **over budget**:\n\n| Category | Budgeted | Spent | Over By |\n|----------|----------|-------|---------|\n| **Marketing** | $30,000 | $31,200 | **$1,200** |\n\nOnly **one category** is over budget:\n\n- **Marketing** exceeded its budget by **$1,200** (spent $31,200 against a $30,000 budget), and is flagged as needing review.\n\nAll other categories \u2014 Engineering, Design, Operations, Travel, and Training \u2014 are within their budgeted amounts."
+        }
+      ]
+    }
+  ]
+}

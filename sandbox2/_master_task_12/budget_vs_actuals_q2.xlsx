@@ -1,0 +1,20 @@
+Project Helios — Q2 Budget vs. Actuals
+Prepared by: NovaBridge Finance | Date: 2026-07-07
+
+Category,Q2 Budget ($),Q2 Actual ($),Variance ($),Notes
+Engineering (internal),180000,194200,+14200,Overrun: unplanned sprint added in May
+Subcontractors,45000,51800,+6800,GeoSync integration scoping work
+Cloud infrastructure,28000,31500,+3500,Load testing environment spun up early
+QA and testing,22000,20100,-1900,Under budget; QA resource joined 2 weeks late
+Travel and client meetings,12000,9400,-2600,Two site visits deferred to Q3
+Contingency reserve,15000,15000,0,Untouched
+TOTAL,302000,322000,+20000,
+
+Projected additional Q3 overruns:
+- GeoSync license (if not renewed before expiry): $12,000
+- UAT extension (1 additional week): $15,000
+- Estimated total H2 projected overrun: $47,000
+
+Note: Per MSA Section 4.2, internal cost overruns cannot be passed to Meridian Group.
+CFO review scheduled: 2026-07-18
+Action required: Budget reconciliation plan due to CFO by 2026-07-20.
