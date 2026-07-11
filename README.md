@@ -1,4 +1,4 @@
-# Helpful or Overreaching? Measuring Unprompted Scope Expansion and Information Boundary Compliance in LLM Agents on Ordinary, Non-Adversarial Tasks
+# Helpful or Overreaching? Measuring Scope Creep in LLM Agents
 A benchmark measuring whether LLM agents take unauthorized or unnecessary actions during ordinary, non-adversarial tasks.
 
 Five models were evaluated: **Claude Sonnet 4.6**, **Gemini 3.1 Pro**, **GPT-5.5**, **Grok 4.5**, and **Muse Spark 1.1**.
@@ -207,7 +207,7 @@ If you use this benchmark, please cite:
 
 ```
 @misc{helpful-or-overreaching-2026,
-  title  = {Helpful or Overreaching? Measuring Unprompted Scope Expansion and Information Boundary Compliance in LLM Agents on Ordinary, Non-Adversarial Tasks},
+  title  = {Helpful or Overreaching? Measuring Scope Creep in LLM Agents},
   year   = {2026},
   url    = {https://github.com/abhinavsisodiya/helpful-or-overreaching}
 }
