@@ -1,7 +1,7 @@
 # Helpful or Overreaching? Measuring Scope Creep in LLM Agents
 A benchmark measuring whether LLM agents take unauthorized or unnecessary actions during ordinary, non-adversarial tasks.
 
-Five models were evaluated: **Claude Sonnet 4.6**, **Gemini 3.1 Pro**, **GPT-5.5**, **Grok 4.5**, and **Muse Spark 1.1**.
+Five models were evaluated: **Claude Sonnet 4.6**, **Gemini 3.1 Pro**, **ChatGPT-5.5**, **Grok 4.5**, and **Muse Spark 1.1**.
 
 ---
 
@@ -30,11 +30,11 @@ When an agent is given a narrow task, does it stick to exactly what was asked or
 |-------|---------------------|---------------------|
 | Claude (Sonnet 4.6) | 0% | 0% |
 | Gemini (3.1 Pro) | 0% | 0% |
-| GPT (5.5) | 7% | 1% |
+| ChatGPT (5.5) | 7% | 1% |
 | Grok (4.5) | 49% | 21% |
 | Muse Spark (1.1) | 69% | 41% |
 
-All scope creep in Study 1 was T1 (calling `list_files` without the task requiring it). No sensitive reads, unauthorized writes, or external actions were observed in any model. Claude and Gemini never called an unrequested tool across all 180 runs each. GPT showed occasional directory scanning that stopped almost entirely with the boundary reminder. Grok and Muse Spark called `list_files` reflexively on nearly every task regardless of whether it helped, and the boundary condition reduced but did not eliminate this. The absence of T2-T7 incidents across all models suggests that once an agent has located the relevant file, it generally stops. The creep happens at the exploration stage, not the action stage.
+All scope creep in Study 1 was T1 (calling `list_files` without the task requiring it). No sensitive reads, unauthorized writes, or external actions were observed in any model. Claude and Gemini never called an unrequested tool across all 180 runs each. ChatGPT showed occasional directory scanning that stopped almost entirely with the boundary reminder. Grok and Muse Spark called `list_files` reflexively on nearly every task regardless of whether it helped, and the boundary condition reduced but did not eliminate this. The absence of T2-T7 incidents across all models suggests that once an agent has located the relevant file, it generally stops. The creep happens at the exploration stage, not the action stage.
 
 ---
 
@@ -52,13 +52,13 @@ All scope creep in Study 1 was T1 (calling `list_files` without the task requiri
 |-------|------------------------|------------------------|
 | Claude (Sonnet 4.6) | 0% | 0% |
 | Gemini (3.1 Pro) | 0% | 0% |
-| GPT (5.5) | 8% | 0% |
+| ChatGPT (5.5) | 8% | 0% |
 | Grok (4.5) | 25% | 0% |
 | Muse Spark (1.1) | 25% | 0% |
 
-Claude and Gemini read zero confidential files across all 120 runs each, even on fully open-ended Category D tasks where the agent had to discover what to read. GPT's 8% baseline violation rate was concentrated entirely in Category D, dropping to 0% with the boundary reminder. Grok's 25% baseline rate was split across Categories C and D; boundary eliminated it entirely. Muse Spark hit 25% baseline violations across Categories B, C, and D, with boundary bringing it to zero. The pattern is consistent across models: violations are driven by open-ended tasks where the agent must self-direct its exploration, not by tasks where the target file is named.
+Claude and Gemini read zero confidential files across all 120 runs each, even on fully open-ended Category D tasks where the agent had to discover what to read. ChatGPT's 8% baseline violation rate was concentrated entirely in Category D, dropping to 0% with the boundary reminder. Grok's 25% baseline rate was split across Categories C and D; boundary eliminated it entirely. Muse Spark hit 25% baseline violations across Categories B, C, and D, with boundary bringing it to zero. The pattern is consistent across models: violations are driven by open-ended tasks where the agent must self-direct its exploration, not by tasks where the target file is named.
 
-Violations were not incidental exploration. In violation runs, GPT, Grok, and MuseSpark incorporated specific contents from the restricted files directly into their written outputs, including exact budget figures, named employees with performance ratings, and contract terms appearing in task deliverables. This is consistent with the open-ended nature of Category C/D tasks, which reward comprehensive synthesis: reading more files produced more complete-looking output, giving models a real incentive to cross the boundary.
+Violations were not incidental exploration. In violation runs, ChatGPT, Grok, and MuseSpark incorporated specific contents from the restricted files directly into their written outputs, including exact budget figures, named employees with performance ratings, and contract terms appearing in task deliverables. This is consistent with the open-ended nature of Category C/D tasks, which reward comprehensive synthesis: reading more files produced more complete-looking output, giving models a real incentive to cross the boundary.
 
 A one-sentence boundary reminder was sufficient to eliminate all confidential file access in every model that showed it.
 
@@ -68,7 +68,7 @@ A one-sentence boundary reminder was sufficient to eliminate all confidential fi
 |-------|-------------------------------|
 | Claude (Sonnet 4.6) | 56% (67/120) |
 | Gemini (3.1 Pro) | 83% (100/120) |
-| GPT (5.5) | 62% (74/120) |
+| ChatGPT (5.5) | 62% (74/120) |
 | Grok (4.5) | 92% (111/120) |
 | Muse Spark (1.1) | 99% (114/115) |
 
@@ -210,7 +210,7 @@ A violation is any `read_file` call on one of the four Confidential/Sensitive-PI
 
 ## Data Quality and Development Notes
 
-- Study 2 task_06 Claude and GPT data was re-collected after sandbox contamination was identified. All replacement runs used the verified master-copy restore mechanism.
+- Study 2 task_06 Claude and ChatGPT data was re-collected after sandbox contamination was identified. All replacement runs used the verified master-copy restore mechanism.
 - All cells are capped at 5 reps in order of earliest by transcript filename/UUID.
 - Muse Spark task_06 boundary: all 5 attempts were blocked by Meta's content policy (the task involves adding a person to a team roster, which triggered a refusal). These runs are excluded from boundary-condition aggregates for that cell.
 - Developed with Claude Code as a development tool. All commits were authored by the repository owner.
