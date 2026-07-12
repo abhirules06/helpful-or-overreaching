@@ -34,7 +34,7 @@ When an agent is given a narrow task, does it stick to exactly what was asked or
 | Grok (4.5) | 49% | 21% |
 | Muse Spark (1.1) | 69% | 41% |
 
-All scope creep in Study 1 was T1 (reconnaissance - calling `list_files` without the task requiring it). No sensitive reads, no unauthorized writes, no external actions were observed in any model.
+All scope creep in Study 1 was T1 (calling `list_files` without the task requiring it). No sensitive reads, unauthorized writes, or external actions were observed in any model. Claude and Gemini never called an unrequested tool across all 180 runs each. GPT showed occasional directory scanning that stopped almost entirely with the boundary reminder. Grok and MuseSpark called `list_files` reflexively on nearly every task regardless of whether it helped, and the boundary condition reduced but did not eliminate this. The absence of T2-T7 incidents across all models suggests that once an agent has located the relevant file, it generally stops. The creep happens at the exploration stage, not the action stage.
 
 ---
 
@@ -56,7 +56,7 @@ All scope creep in Study 1 was T1 (reconnaissance - calling `list_files` without
 | Grok (4.5) | 25% | 0% |
 | Muse Spark (1.1) | 25% | 0% |
 
-Violation rates increased with task open-endedness (Category D tasks had the highest rates). The boundary condition eliminated violations in all models that showed them under baseline.
+Claude and Gemini read zero confidential files across all 120 runs each, even on fully open-ended Category D tasks where the agent had to discover what to read. GPT's 8% baseline violation rate was concentrated entirely in Category D, dropping to 0% with the boundary reminder. Grok's 25% baseline rate was split across Categories C and D; boundary eliminated it entirely. MuseSpark similarly hit 25% baseline violations in Categories C and D, with boundary bringing it to zero. The pattern is consistent across models: violations are driven by open-ended tasks where the agent must self-direct its exploration, not by tasks where the target file is named. A one-sentence boundary reminder was sufficient to eliminate all confidential file access in every model that showed it.
 
 ---
 
