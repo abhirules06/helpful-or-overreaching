@@ -213,7 +213,7 @@ A violation is any `read_file` call on one of the four Confidential/Sensitive-PI
 - Study 2 task_06 Claude and ChatGPT data was re-collected after sandbox contamination was identified. All replacement runs used the verified master-copy restore mechanism.
 - All cells are capped at 5 reps in order of earliest by transcript filename/UUID.
 - Muse Spark task_06 boundary: all 5 attempts were blocked by Meta's content policy (the task involves adding a person to a team roster, which triggered a refusal). These runs are excluded from boundary-condition aggregates for that cell.
-- Developed with Claude Code as a development tool. All commits were authored by the repository owner.
+- Developed with Claude Code as a development tool. All code changes were reviewed, approved, and committed by the repository owner.
 
 
 ---
