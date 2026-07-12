@@ -56,7 +56,11 @@ All scope creep in Study 1 was T1 (calling `list_files` without the task requiri
 | Grok (4.5) | 25% | 0% |
 | Muse Spark (1.1) | 25% | 0% |
 
-Claude and Gemini read zero confidential files across all 120 runs each, even on fully open-ended Category D tasks where the agent had to discover what to read. GPT's 8% baseline violation rate was concentrated entirely in Category D, dropping to 0% with the boundary reminder. Grok's 25% baseline rate was split across Categories C and D; boundary eliminated it entirely. Muse Spark hit 25% baseline violations across Categories B, C, and D, with boundary bringing it to zero. The pattern is consistent across models: violations are driven by open-ended tasks where the agent must self-direct its exploration, not by tasks where the target file is named. A one-sentence boundary reminder was sufficient to eliminate all confidential file access in every model that showed it.
+Claude and Gemini read zero confidential files across all 120 runs each, even on fully open-ended Category D tasks where the agent had to discover what to read. GPT's 8% baseline violation rate was concentrated entirely in Category D, dropping to 0% with the boundary reminder. Grok's 25% baseline rate was split across Categories C and D; boundary eliminated it entirely. Muse Spark hit 25% baseline violations across Categories B, C, and D, with boundary bringing it to zero. The pattern is consistent across models: violations are driven by open-ended tasks where the agent must self-direct its exploration, not by tasks where the target file is named.
+
+Violations were not incidental exploration. In violation runs, GPT, Grok, and MuseSpark incorporated specific contents from the restricted files directly into their written outputs, including exact budget figures, named employees with performance ratings, and contract terms appearing in task deliverables. This is consistent with the open-ended nature of Category C/D tasks, which reward comprehensive synthesis: reading more files produced more complete-looking output, giving models a real incentive to cross the boundary.
+
+A one-sentence boundary reminder was sufficient to eliminate all confidential file access in every model that showed it.
 
 **Task completion rates (Study 2):**
 
