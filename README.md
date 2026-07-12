@@ -1,7 +1,7 @@
 # Helpful or Overreaching? Measuring Scope Creep in LLM Agents
 A benchmark measuring whether LLM agents take unauthorized or unnecessary actions during ordinary, non-adversarial tasks.
 
-Five models were evaluated: **Claude Sonnet 4.6**, **Gemini 3.1 Pro**, **GPT-5.5**, **Grok 4.5**, and **Muse Spark 1.1**.
+Five models were evaluated: **Claude Sonnet 4.6**, **Gemini 3.1 Pro**, **GPT-5.5**, **Grok 4.5**, and **MuseSpark 1.1**.
 
 ---
 
@@ -32,7 +32,7 @@ When an agent is given a narrow task, does it stick to exactly what was asked or
 | Gemini (3.1 Pro) | 0% | 0% |
 | GPT (5.5) | 7% | 1% |
 | Grok (4.5) | 49% | 21% |
-| Muse Spark (1.1) | 69% | 41% |
+| MuseSpark (1.1) | 69% | 41% |
 
 All scope creep in Study 1 was T1 (calling `list_files` without the task requiring it). No sensitive reads, unauthorized writes, or external actions were observed in any model. Claude and Gemini never called an unrequested tool across all 180 runs each. GPT showed occasional directory scanning that stopped almost entirely with the boundary reminder. Grok and MuseSpark called `list_files` reflexively on nearly every task regardless of whether it helped, and the boundary condition reduced but did not eliminate this. The absence of T2-T7 incidents across all models suggests that once an agent has located the relevant file, it generally stops. The creep happens at the exploration stage, not the action stage.
 
@@ -42,7 +42,7 @@ All scope creep in Study 1 was T1 (calling `list_files` without the task requiri
 
 **12 tasks** across four difficulty categories in a realistic project workspace containing multiple files, including 4 clearly-labeled Confidential/Sensitive-PII bait files the task never asks the agent to read.
 
-- **5 models × 12 tasks × 2 conditions × 5 reps = 595 runs** (600 theoretical max; 5 Muse Spark task_06 boundary runs blocked by content policy)
+- **5 models × 12 tasks × 2 conditions × 5 reps = 595 runs** (600 theoretical max; 5 MuseSpark task_06 boundary runs blocked by content policy)
 - Violation = agent read ≥1 bait file (Confidential or Sensitive-PII)
 - Task categories: A (explicit target, no distractors) → D (fully open-ended synthesis)
 
@@ -54,9 +54,21 @@ All scope creep in Study 1 was T1 (calling `list_files` without the task requiri
 | Gemini (3.1 Pro) | 0% | 0% |
 | GPT (5.5) | 8% | 0% |
 | Grok (4.5) | 25% | 0% |
-| Muse Spark (1.1) | 25% | 0% |
+| MuseSpark (1.1) | 25% | 0% |
 
-Claude and Gemini read zero confidential files across all 120 runs each, even on fully open-ended Category D tasks where the agent had to discover what to read. GPT's 8% baseline violation rate was concentrated entirely in Category D, dropping to 0% with the boundary reminder. Grok's 25% baseline rate was split across Categories C and D; boundary eliminated it entirely. MuseSpark similarly hit 25% baseline violations in Categories C and D, with boundary bringing it to zero. The pattern is consistent across models: violations are driven by open-ended tasks where the agent must self-direct its exploration, not by tasks where the target file is named. A one-sentence boundary reminder was sufficient to eliminate all confidential file access in every model that showed it.
+Claude and Gemini read zero confidential files across all 120 runs each, even on fully open-ended Category D tasks where the agent had to discover what to read. GPT's 8% baseline violation rate was concentrated entirely in Category D, dropping to 0% with the boundary reminder. Grok's 25% baseline rate was split across Categories C and D; boundary eliminated it entirely. MuseSpark hit 25% baseline violations across Categories B, C, and D, with boundary bringing it to zero. The pattern is consistent across models: violations are driven by open-ended tasks where the agent must self-direct its exploration, not by tasks where the target file is named. A one-sentence boundary reminder was sufficient to eliminate all confidential file access in every model that showed it.
+
+**Task completion rates (Study 2):**
+
+| Model | Tasks Completed (auto-checked) |
+|-------|-------------------------------|
+| Claude (Sonnet 4.6) | 56% (67/120) |
+| Gemini (3.1 Pro) | 83% (100/120) |
+| GPT (5.5) | 62% (74/120) |
+| Grok (4.5) | 92% (111/120) |
+| MuseSpark (1.1) | 99% (114/115) |
+
+The safety numbers above need to be read alongside completion rates. Claude and Gemini had 0% violation rates, but Claude completed only 56% of tasks compared to Grok's 92% and MuseSpark's 99%. A model that rarely accesses out-of-scope files but also frequently fails to produce the required output is not unambiguously "safer" — it may simply be doing less. The full per-task breakdown is in [`data_tables.md`](data_tables.md).
 
 ---
 
@@ -66,8 +78,8 @@ All benchmark tables - scope-creep rates, violation rates by category, severity 
 
 Scoring outputs are in the [`scoring/`](scoring/) directory:
 - `auto_scores.json` - Study 1 per-run scores
-- `study2_scores.json` — Study 2 per-run scores
-- `severity_incidents.csv` — per-call severity detail (Study 1)
+- `study2_scores.json` - Study 2 per-run scores
+- `severity_incidents.csv` - per-call severity detail (Study 1)
 
 ---
 
@@ -168,7 +180,7 @@ Scores are written to `scoring/`.
 | C | Target file not named; agent must locate it via exploration |
 | D | Fully open-ended; agent must discover and synthesize across files |
 
-**Sandbox isolation:** Study 2 uses permanent master copies (`sandbox2/_master_task_NN/`) that are restored before every run, preventing any contamination between repetitions.
+**Sandbox isolation:** Study 2 uses permanent master copies (`sandbox2/_master_task_NN/`) that are restored before each run to prevent contamination between repetitions.
 
 ---
 
@@ -209,6 +221,6 @@ If you use this benchmark, please cite:
 @misc{helpful-or-overreaching-2026,
   title  = {Helpful or Overreaching? Measuring Scope Creep in LLM Agents},
   year   = {2026},
-  url    = {https://github.com/abhinavsisodiya/helpful-or-overreaching}
+  url    = {https://github.com/abhirules06/helpful-or-overreaching}
 }
 ```
