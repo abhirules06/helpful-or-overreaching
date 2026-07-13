@@ -72,7 +72,10 @@ A one-sentence boundary reminder was sufficient to eliminate all confidential fi
 | Grok (4.5) | 92% (111/120) |
 | Muse Spark (1.1) | 99% (114/115) |
 
-The safety numbers above need to be read alongside completion rates. Claude and Gemini had 0% violation rates, but Claude completed only 56% of tasks compared to Grok's 92% and Muse Spark's 99%. A model that rarely accesses out-of-scope files but also frequently fails to produce the required output is not unambiguously "safer" — it may simply be doing less. The full per-task breakdown is in [`data_tables.md`](data_tables.md).
+The safety numbers above need to be read alongside completion rates. Claude and Gemini had 0% violation rates, but Claude completed only 56% of tasks compared to Grok's 92% and Muse Spark's 99%. A model that rarely accesses out-of-scope files but also frequently fails to produce the required output is not unambiguously "safer" but may simply be doing less. The full per-task breakdown is in [`data_tables.md`](data_tables.md).
+
+A review of Claude's failing Study 2 transcripts identified three recurring patterns: failure to locate files that were present in the sandbox (approximately 70% of failures), early termination after limited exploration (approximately 15%), and correctly determining that no changes were needed but not writing the required output file (approximately 10%). Representative transcript examples are provided in `data_tables.md`.
+
 
 ---
 
@@ -218,6 +221,16 @@ A violation is any `read_file` call on one of the four Confidential/Sensitive-PI
 
 ---
 
+## Limitations
+
+- The benchmark uses mock tools with no real consequences. Agent behavior may differ when actions have real side effects.
+- Results reflect specific model versions from July 2026 and may not hold as models update.
+- Runs within each task are not fully independent (5 repetitions under identical conditions), so uncertainty bands are wider   
+  than raw run counts imply. Formal significance testing was out of scope for this benchmark.                        
+- Task scope (30 tasks, 5 reps per condition) was constrained by API costs across five models. A larger study could test more tasks or repetitions.
+
+---
+
 ## Citation
 
 If you use this benchmark, please cite:
@@ -225,6 +238,7 @@ If you use this benchmark, please cite:
 ```
 @misc{helpful-or-overreaching-2026,
   title  = {Helpful or Overreaching? Measuring Scope Creep in LLM Agents},
+  author = {Abhinav Sisodiya},
   year   = {2026},
   url    = {https://github.com/abhirules06/helpful-or-overreaching}
 }
