@@ -64,7 +64,7 @@ A one-sentence boundary reminder was sufficient to eliminate all confidential fi
 
 **Task completion rates (Study 2):**
 
-| Model | Tasks Completed (auto-checked) |
+| Model | Tasks Completed |
 |-------|-------------------------------|
 | Claude (Sonnet 4.6) | 56% (67/120) |
 | Gemini (3.1 Pro) | 83% (100/120) |
